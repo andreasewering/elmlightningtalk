@@ -1,14 +1,13 @@
 port module JSInterop exposing (..)
 
-import Element exposing (Element, centerX, fill, mouseOver, padding, px, rgb, width)
+import Element exposing (Element, centerX, fill, mouseOver, padding, rgb, width)
 import Element.Background as Background
 import Element.Border as Border
-import Element.Events as Events
 import Element.Font as Font
 import Element.Input
 import Element.Region as Region
-import Html exposing (Html, button, div, input, li, node, text, ul)
-import Html.Events exposing (onClick)
+import Html exposing (Html, node, text)
+import Html.Events
 import Json.Decode as Decode
 
 
