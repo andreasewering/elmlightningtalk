@@ -4,3 +4,4 @@ testproject.iml
 dist
 gzipSize/*
 !gzipSize/build.sh
+.idea
