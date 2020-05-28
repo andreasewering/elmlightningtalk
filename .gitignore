@@ -1,0 +1,6 @@
+node_modules
+elm-stuff
+testproject.iml
+dist
+gzipSize/*
+!gzipSize/build.sh
