@@ -10,7 +10,7 @@ This is a toy project showcasing a few of Elm's concepts and ways to integrate J
 
 In [./src/Main.elm](./src/Main.elm) you can see the classic architecture of Model, View, Update.
 
-#### Pureness and Determinism
+#### Pureness
 
 An example for the pureness of Elm and its implications is given with the subscription to the windows size. In JS you could just ask for the windows size when you need it, but that is a non-deterministic function, it could potentially get different values every time it is called. Then when do you rerender?
 This is a problem solved by subscriptions, since the new value just comes in our update function and from there on, everything is deterministic and pure.
@@ -30,11 +30,11 @@ The file also contains an integration of a web component defined in [./index.js]
 
 ### Styling
 
-Elm itself does not care how you style your HTML Elements. This project shows 3 common approaches: .css Files, css in Elm with [Elm-Css](https://package.elm-lang.org/packages/rtfeldman/elm-css/latest) and [Elm-UI](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest/).
+Elm itself does not care how you style your HTML Elements. This project shows 3 common approaches: .css Files, CSS in Elm with [Elm-CSS](https://package.elm-lang.org/packages/rtfeldman/elm-css/latest) and [Elm-UI](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest/).
 
 #### Css Files
 
-No surprise here: Write css files, include the classes in Elm with `Html.class`. [./src/Main.elm](./src/Main.elm) and [./src/Navbar.elm](./src/Navbar.elm) are styled this way as an example. In this case, you need a way to include your css in the bundle (seperately with link in index.html or as in this project, with webpack's style loader)
+No surprise here: Write CSS files, include the classes in Elm with `Html.class`. [./src/Main.elm](./src/Main.elm) and [./src/Navbar.elm](./src/Navbar.elm) are styled this way as an example. In this case, you need a way to include your CSS in the bundle (seperately with link in index.html or as in this project, with webpack's style loader)
 
 #### Elm-Css
 
